@@ -55,11 +55,11 @@ public class LineItem {
         return product.getUnitPrice();
     }
     
-    public static void main(String[] args) {
-        LineItem item = new LineItem(new Product("A100", "hat", 31, new PercentOffDiscount(.1)),4);
-        System.out.println(item.getProdID() +" " +  item.getName() + " " +item.getUnitPrice() +" "+ item.getQty() + " " +item.getSubtotal() +
-               " " + item.getAmountSaved() +" "+ item.getDiscountProductTotal(4));
-    }
+  // 
+    //LineItem item = new LineItem(new Product("A100", "hat", 31, new PercentOffDiscount(.1)),4);
+     //   System.out.println(item.getProdID() +" " +  item.getName() + " " +item.getUnitPrice() +" "+ item.getQty() + " " +item.getSubtotal() +
+          //     " " + item.getAmountSaved() +" "+ item.getDiscountProductTotal(4));
+    //}
 
     
     

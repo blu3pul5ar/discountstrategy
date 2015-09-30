@@ -10,11 +10,11 @@ package discountstrategy;
  * @author Nicholas
  */
 public class PercentOffDiscount implements DiscountStrategy {
-    public static void main(String[] args) {
-        DiscountStrategy discount = new QuantityDiscount(.10,5);
-        System.out.println(discount.getAmountSaved(10.00,2));
-        System.out.println(discount.getDiscountedProductTotal(10.00, 2));
-    }
+   // public static void main(String[] args) {
+     //   DiscountStrategy discount = new QuantityDiscount(.10,5);
+      //  System.out.println(discount.getAmountSaved(10.00,2));
+      //  System.out.println(discount.getDiscountedProductTotal(10.00, 2));
+   // }
     private double discountRate;
 
     public PercentOffDiscount(double discountRate) {

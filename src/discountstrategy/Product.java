@@ -62,8 +62,8 @@ public class Product {
         return discount.getDiscountedProductTotal(unitPrice, qty);
     }
     
-    public static void main(String[] args) {
-        Product product = new Product("A100", "Hat", 194.28, new PercentOffDiscount(.10));
-        System.out.println(product.getAmountSaved(2));
-    }
+   // public static void main(String[] args) {
+   //     Product product = new Product("A100", "Hat", 194.28, new PercentOffDiscount(.10));
+   //     System.out.println(product.getAmountSaved(2));
+  //  }
 }

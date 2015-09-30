@@ -9,12 +9,9 @@ package discountstrategy;
  *
  * @author Nicholas
  */
-public class Start {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-    }
+public class Receipt {
+    private LineItem li;
+    private Customer cu;
+    
     
 }
