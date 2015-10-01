@@ -9,10 +9,8 @@ package discountstrategy;
  *
  * @author Nicholas
  */
-public class Receipt {
-    private LineItem li;
-    private Customer cu;
-    private LineItem [] items;
-    private double total;
-    
+public class PaperReceiptFormatter {
+    public String toString(){
+        return "hi";
+    }
 }
