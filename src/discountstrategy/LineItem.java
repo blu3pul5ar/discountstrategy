@@ -62,6 +62,11 @@ public class LineItem {
           //     " " + item.getAmountSaved() +" "+ item.getDiscountProductTotal(4));
     //}
 
-    
-    
+    public Database getDb() {
+        return db;
+    }
+
+    public void setDb(Database db) {
+        this.db = db;
+    }  
 }

@@ -11,39 +11,16 @@ package discountstrategy;
  */
 public class OnlineCustomer implements Customer{
     private String custID;
-    private String fName;
-    private String lName;
-    private char mInitial;
+    private String name;
 
-    @Override
-    public String getfName() {
-        return fName;
+    public String getName() {
+        return name;
     }
 
-    @Override
-    public void setfName(String fName) {
-        this.fName = fName;
+    public void setName(String name) {
+        this.name = name;
     }
-
-    @Override
-    public String getlName() {
-        return lName;
-    }
-
-    @Override
-    public void setlName(String lName) {
-        this.lName = lName;
-    }
-
-    @Override
-    public char getmInitial() {
-        return mInitial;
-    }
-
-    @Override
-    public void setmInitial(char mInitial) {
-        this.mInitial = mInitial;
-    }
+    
     //no setter as custID wont change
     @Override
     public String getCustID() {

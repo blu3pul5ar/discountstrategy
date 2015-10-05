@@ -11,19 +11,10 @@ package discountstrategy;
  */
 public interface Customer {
 
-   
     String getCustID();
 
-    String getfName();
+    String getName();
 
-    String getlName();
-
-    char getmInitial();
-
-    void setfName(String fName);
-
-    void setlName(String lName);
-
-    void setmInitial(char mInitial);
+    void setName(String name);
     
 }
