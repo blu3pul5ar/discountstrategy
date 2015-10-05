@@ -10,5 +10,19 @@ package discountstrategy;
  * @author Nicholas
  */
 public interface Database {
+
+    /**
+     * Tries to find a Customer by customer id.
+     * @param custId - must not be null or empty
+     * @return found Customer or null if not found or bad argument
+     */
+    Customer findCustomer(final String custId);
+
+    /**
+     * Tries to find a Product by product id.
+     * @param prodId - must not be null or empty
+     * @return found Product or null if not found or bad argument
+     */
+    Product findProduct(final String prodId);
     
 }

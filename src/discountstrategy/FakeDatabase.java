@@ -31,6 +31,7 @@ public class FakeDatabase implements Database{
      * @param custId - must not be null or empty
      * @return found Customer or null if not found or bad argument
      */
+    @Override
     public final Customer findCustomer(final String custId) {
         // validation is needed for method parameter
         if(custId == null || custId.length() == 0) {
@@ -56,6 +57,7 @@ public class FakeDatabase implements Database{
      * @return found Product or null if not found or bad argument
      */
  
+    @Override
     public final Product findProduct(final String prodId) {
         // validation is needed for method parameter
         if(prodId == null || prodId.length() == 0) {

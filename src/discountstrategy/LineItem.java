@@ -14,9 +14,10 @@ public class LineItem {
     private int qty;
     private Database db;
 
-    public LineItem(Product product, int qty) {
-        this.product = product;
+    public LineItem(String prodId, int qty, Database db) {
         this.qty = qty;
+        this.db = db;
+        this.product = db.findProduct(prodId);
     }
     
     public Product getProduct() {
@@ -69,4 +70,7 @@ public class LineItem {
     public void setDb(Database db) {
         this.db = db;
     }  
+    public Product findProduct(String prodID){
+        return db.findProduct(prodID);
+    }
 }
