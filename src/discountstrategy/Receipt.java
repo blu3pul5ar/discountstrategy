@@ -60,14 +60,15 @@ public class Receipt {
         for(LineItem i: Items){
             totalSavings += i.getAmountSaved();
         }
-        return totalSavings;
+        return ((int)(totalSavings * 100))/100.0;
     }
     public double getTotal(){
-        return getTotalBeforeDiscount() - getTotalSavings();
+        return (int)((getTotalBeforeDiscount() - getTotalSavings())*100)/100.0;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Receipt r = new Receipt(new FakeDatabase(),"customer 1");
-        r.addLineItem("A101",2);
+        r.addLineItem("A101",160);
+        r.addLineItem("C222", 1000);
         System.out.println(r.getTotalBeforeDiscount() + " " + r.getTotalSavings() + " " + r.getTotal());
     }
 }
